@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/backgroundBlack">
+
+        <!-- Welcome text-->
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="@string/welcomeText"
+            android:textAlignment="center"
+            android:textColor="@color/welcomeOrange"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:padding="10dp"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:maxHeight="110dp"
+            android:maxWidth="140dp"
+            app:srcCompat="@drawable/world_map_black_white_classic"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            />
+
+
+        <!-- promt text for user yo enter name-->
+        <TextView
+            android:id="@+id/enterNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="@string/enter_you_name_text"
+            android:textAlignment="center"
+            android:textColor="@color/welcomeOrange"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- enter name field -->
+        <EditText
+            android:id="@+id/enterNameID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/normalTextColor"
+            android:drawableStart="@mipmap/ic_person"
+            android:fontFamily="casual"
+            android:hint="@string/enter_name_text"
+            android:padding="10dp"
+            android:textColor="@color/ButtonGrey" />
+
+        <!-- enter password field -->
+        <EditText
+            android:id="@+id/enterPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/normalTextColor"
+            android:drawableStart="@mipmap/ic_lock"
+            android:fontFamily="casual"
+            android:hint="@string/enter_password"
+            android:padding="10dp"
+            android:textColor="@color/ButtonGrey" />
+
+
+        <!-- Ok button that takes you to next view-->
+        <Button
+            android:id="@+id/goToTimeZoneButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="@string/okButton"
+            android:textColor="@color/normalTextColor"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:background="@drawable/custom_button"
+            android:onClick="goToTimeZoneActivity"/>
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:orientation="horizontal"
+           android:layout_gravity="center">
+           <!-- Checkbox for remember me -->
+        <CheckBox
+            android:id="@+id/checkBoxRemember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/welcomeOrange"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:buttonTint="@color/welcomeOrange"
+            android:text="@string/remember_me" />
+
+           <CheckBox
+               android:id="@+id/checkBoxLock"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:textColor="@color/welcomeOrange"
+               android:layout_marginTop="20dp"
+               android:buttonTint="@color/welcomeOrange"
+               android:text="@string/lock_user" />
+
+       </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/backgroundBlack"
+        android:weightSum="1">
+
+        <!--Text with welcome and the entered name -->
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/welcomeOrange"
+            android:fontFamily="casual"
+            android:textSize="24dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"/>
+
+        <!-- promt text for choosing desired time zone-->
+        <TextView
+            android:id="@+id/chooseTimeZonepromptTextID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_zone_text"
+            android:textColor="@color/welcomeOrange"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"/>
+
+
+        <Button
+            android:id="@+id/goToClockButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/okButton"
+            android:textColor="@color/normalTextColor"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:background="@drawable/custom_button"
+            android:onClick="goToClockActivity"
+            />
+
+        <!-- Scroll view containing all the different timezones-->
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/timeZoneScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:fadeScrollbars="false"
+            android:background="@color/scrollBarBackColor"
+            android:padding="10dp"
+            android:scrollbarThumbVertical="@color/welcomeOrange"
+            >
+
+
+            <!-- Radio group containing all the time zones-->
+            <RadioGroup
+                android:id="@+id/timeZoneRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <!-- First radio button in the radio group-->
+                <RadioButton
+
+                    android:id="@+id/melbourneRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/welcomeOrange"
+                    android:paddingLeft="40dp"
+                    android:text="@string/melbourne"
+                    android:textColor="@color/normalTextColor"
+                    android:paddingTop="30dp"
+                    android:paddingBottom="30dp"
+                    android:textSize="20dp"
+                    />
+
+                <!-- Creates the vertical line that devides the radio buttons -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/welcomeOrange"/>
+
+
+
+                <RadioButton
+                    android:id="@+id/bankokRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/welcomeOrange"
+                    android:paddingLeft="40dp"
+                    android:text="@string/bankok"
+                    android:textColor="@color/normalTextColor"
+                    android:paddingTop="30dp"
+                    android:paddingBottom="30dp"
+                    android:textSize="20dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/welcomeOrange"/>
+
+                <RadioButton
+                    android:id="@+id/copenhagenRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/welcomeOrange"
+                    android:paddingLeft="40dp"
+                    android:text="@string/copenhagen"
+                    android:textColor="@color/normalTextColor"
+                    android:paddingTop="30dp"
+                    android:paddingBottom="30dp"
+                    android:textSize="20dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/welcomeOrange"/>
+
+                <RadioButton
+                    android:id="@+id/londonRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/welcomeOrange"
+                    android:paddingLeft="40dp"
+                    android:text="@string/london"
+                    android:textColor="@color/normalTextColor"
+                    android:paddingTop="30dp"
+                    android:paddingBottom="30dp"
+                    android:textSize="20dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/welcomeOrange"/>
+
+                <RadioButton
+                    android:id="@+id/newYorkRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/welcomeOrange"
+                    android:paddingLeft="40dp"
+                    android:text="@string/newYork"
+                    android:textColor="@color/normalTextColor"
+                    android:paddingTop="30dp"
+                    android:paddingBottom="30dp"
+                    android:textSize="20dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/welcomeOrange"/>
+
+                <RadioButton
+                    android:id="@+id/ParisRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/welcomeOrange"
+                    android:paddingLeft="40dp"
+                    android:text="@string/paris"
+                    android:textColor="@color/normalTextColor"
+                    android:paddingTop="30dp"
+                    android:paddingBottom="30dp"
+                    android:textSize="20dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/welcomeOrange"/>
+
+                <RadioButton
+                    android:id="@+id/perthRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/welcomeOrange"
+                    android:paddingLeft="40dp"
+                    android:text="@string/perth"
+                    android:textColor="@color/normalTextColor"
+                    android:paddingTop="30dp"
+                    android:paddingBottom="30dp"
+                    android:textSize="20dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/welcomeOrange"/>
+
+                <RadioButton
+                    android:id="@+id/rioRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/welcomeOrange"
+                    android:paddingLeft="40dp"
+                    android:text="@string/rio"
+                    android:textColor="@color/normalTextColor"
+                    android:paddingTop="30dp"
+                    android:paddingBottom="30dp"
+                    android:textSize="20dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/welcomeOrange"/>
+
+                <RadioButton
+                    android:id="@+id/tokioRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/welcomeOrange"
+                    android:paddingLeft="40dp"
+                    android:text="@string/tokio"
+                    android:textColor="@color/normalTextColor"
+                    android:paddingTop="30dp"
+                    android:paddingBottom="30dp"
+                    android:textSize="20dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/welcomeOrange"/>
+
+            </RadioGroup>
+        </android.support.v4.widget.NestedScrollView>
+     </LinearLayout>
+</ScrollView>

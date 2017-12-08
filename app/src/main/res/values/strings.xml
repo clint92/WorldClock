@@ -1,0 +1,46 @@
+<resources>
+
+    <!-- labels -->
+    <string name="app_name">Worlds Clock and Time zones</string>
+    <string name="welcomeText">Welcome to World Clocks</string>
+    <string name="splash_text">World Clocks</string>
+    <string name="enter_you_name_text">Login</string>
+    <string name="DigitalClockText">Digital Clock</string>
+    <string name="AnalogClockText">Analog Clock</string>
+    <string name="time_zone_text">Choose your desired time zone</string>
+    <string name="enter_name_text">Enter Name</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="local_time_text">Local Time</string>
+    <string name="choosen_timeZone_text">TimeZone</string>
+    <string name="change_timeZone_text">Change TimeZone</string>
+    <string name="noTimeZoneChoosenText">No Time Zone choosen. Local Time</string>
+    <string name="no_Name_enered">No name entered. Try again</string>
+    <string name="no_Name_and_password_entered">No name and password entered. Try again</string>
+    <string name="no_password_enered">No password entered. Try again</string>
+    <string name="welcom_text_with_name">Welcome </string>
+    <string name="remember_me">Remember Me </string>
+    <string name="lock_user">Lock To User </string>
+    <string name="wrong_login">Locked, Wrong Login </string>
+
+
+
+
+    <!--- Area names -->
+    <string name="melbourne">Melbourne</string>
+    <string name="paris">Paris</string>
+    <string name="newYork">New York</string>
+    <string name="copenhagen">Copenhagen</string>
+    <string name="tokio">Tokyo</string>
+    <string name="perth">Perth</string>
+    <string name="bankok">Bankok</string>
+    <string name="london">London</string>
+    <string name="rio">Rio</string>
+
+
+    <!-- Buttons -->
+    <string name="okButton">OK</string>
+
+    <!-- Text -->
+
+
+</resources>
